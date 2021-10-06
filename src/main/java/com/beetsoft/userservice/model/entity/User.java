@@ -27,7 +27,7 @@ public class User {
 	private String fullname;
 	
 	@Column(length = 50, nullable = false)
-	private String loginId;
+	private String login_id;
 	
 	@Column(length = 100, nullable = false)
 	private String email;
@@ -36,10 +36,10 @@ public class User {
 	private String mobileNO;
 	
 	@Column(length = 20, nullable = false)
-	private String PhoneNO;
+	private String phoneNO;
 	
 	@Column(nullable = false)
-	@Enumerated(EnumType.ORDINAL)
+	@Enumerated(EnumType.STRING)
 	private StatusEnum status;
 	
 	@Column(nullable = false)
